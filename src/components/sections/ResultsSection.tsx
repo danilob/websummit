@@ -9,6 +9,14 @@ export function ResultsSection({ activeSubmenu }: ResultsSectionProps) {
   const { t } = useLanguage();
   const { isDarkMode } = useDarkMode();
 
+  const content = {
+    costs: {
+      title: 'Impacto nos Custos',
+      stats: t('stats_results'),
+    },
+    
+  };
+
   if (activeSubmenu === 'overview') {
     const desc = t('resultsDesc');
     return (
@@ -32,6 +40,27 @@ export function ResultsSection({ activeSubmenu }: ResultsSectionProps) {
             </>
           )}
         </p>
+      </div>
+    );
+  }
+
+  if (activeSubmenu === 'stats_results') {
+    return (
+      <div className="space-y-8">
+        <div className="grid md:grid-cols-3 gap-6">
+          {content.costs.stats.map((stat, index) => (
+            <div
+              key={index}
+              className="text-center p-4 bg-gray-50 dark:bg-gray-700 rounded-xl"
+            >
+              <div className="text-4xl font-bold text-[#DF5D00] mb-2">{stat.value}</div>
+              <div className="text-lg font-semibold text-gray-900 dark:text-white mb-2">
+                {stat.label}
+              </div>
+              <div className="text-gray-600 dark:text-gray-400">{stat.description}</div>
+            </div>
+          ))}
+        </div>
       </div>
     );
   }

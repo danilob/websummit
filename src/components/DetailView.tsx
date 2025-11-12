@@ -120,7 +120,7 @@ export function DetailView({
         </div>
       </div>
 
-      <div className="py-12  flex-shrink-0">
+      <div className="py-12">
         <Navigation onNavigate={onNavigate} currentView={currentView} />
       </div>
     </div>

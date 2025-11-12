@@ -1,13 +1,41 @@
 import { useLanguage } from '../../hooks/useLanguage';
 import { useDarkMode } from '../../hooks/useDarkMode';
+import { Star } from 'lucide-react';
+
 
 interface DifferentialsSectionProps {
   activeSubmenu: string;
 }
 
+const HighlightedText = ({ text, keywords }: { text: string; keywords: string[] }) => {
+  const parts = text.split(new RegExp(`(${keywords.join('|')})`, 'gi'));
+
+  return (
+    <>
+      {parts.map((part, index) => {
+        const isKeyword = keywords.some(kw => kw.toLowerCase() === part.toLowerCase());
+        return isKeyword ? (
+          <span key={index} className="text-[#DF5D00] font-semibold">{part}</span>
+        ) : (
+          <span key={index}>{part}</span>
+        );
+      })}
+    </>
+  );
+};
+
 export function DifferentialsSection({ activeSubmenu }: DifferentialsSectionProps) {
   const { t } = useLanguage();
   const { isDarkMode } = useDarkMode();
+
+  const content = {
+    
+    diferrentials_company: {
+      title: 'Impacto nos Pacientes',
+      issues: t('company_issues'),
+      keywords: t('company_keywords'),
+    },
+  };
 
   if (activeSubmenu === 'overview') {
     const desc = t('differentialsDesc');
@@ -32,6 +60,26 @@ export function DifferentialsSection({ activeSubmenu }: DifferentialsSectionProp
             </>
           )}
         </p>
+      </div>
+    );
+  }
+
+  if (activeSubmenu === 'main') {
+    return (
+      <div className="space-y-6">
+        <div className="grid md:grid-cols-1 gap-4">
+          {content.diferrentials_company.issues.map((issue, index) => (
+            <div
+              key={index}
+              className="flex items-center gap-4 p-6 bg-gray-50 dark:bg-gray-700 rounded-xl"
+            >
+              <Star className="text-[#DF5D00] flex-shrink-0" size={24} />
+              <p className="text-lg text-gray-700 dark:text-gray-300 text-justify">
+                <HighlightedText text={issue} keywords={content.diferrentials_company.keywords} />
+              </p>
+            </div>
+          ))}
+        </div>
       </div>
     );
   }

@@ -46,6 +46,15 @@ const translations = {
         { "label": "Custos operacionais", "value": "+40%", "description": "devido a processos manuais" },
         { "label": "Tempo perdido", "value": "30%", "description": "em tarefas administrativas" }
       ],
+
+    stats_result:[
+      { label: "Increase in Exams Received", value: "18%", description: "Compared to the year 2024" },
+      { label: "States", value: "7", description: "25% of Brazilian states covered" },
+      { label: "Imaging Centers", value: "96", description: "Including clinics, hospitals, and imaging centers" },
+      { label: "Patients", value: "1M", description: "Patients served by the system" },
+      { label: "Radiologists", value: "262", description: "Active radiologists in the system" },
+      { label: "Reports Delivered", value: "100K/month", description: "Reports can be produced in under 1 minute" }
+    ],
     patient_issues : [
       "Longos tempos de espera para diagnósticos",
       "Necessidade de repetir exames",
@@ -70,6 +79,46 @@ const translations = {
       { "step": "4", "title": "Entrega", "description": "Resultado disponível para médico e paciente" }
     ],
     workflow_keywords: ["solicita","radiologista","automaticamente","nuvem","exame de imagem","analisa","disponível","laudo"],
+    report_title : 'HigIA Report/Apollo PACS',
+    report_points : [
+      'Usabilidade e layout intuitivo',
+      'Ferramentas que aceleram a emissão de laudos',
+      'Fluxo de trabalho sob medida',
+      'Segurança e auditoria total',
+      'Relatórios que impulsionam decisões'
+    ],
+    report_keywords : [
+      '',
+    ],
+    care_title : 'HigIA Care',
+      care_points : [
+        'Agendamento rápido e interativo',
+    'Prontuário completo e customizável',
+    'Painel de atendimento configurável',
+    'Atendimento ágil com cadastro completo',
+    'Controle e auditoria de dados do paciente'
+      ],
+    care_keywords : [
+      '',
+    ],
+    company_issues : [
+      'Sistema escalável para qualquer porte de clínica ou hospital',
+      'Integração com RIS, PACS e prontuário eletrônico',
+      'Consultoria de implantação especializada',
+      'Implantação rápida e sem burocracia',
+      'Suporte humanizado'
+    ],
+    company_keywords: [
+      "humanizado", "qualquer porte", "RIS", "PACS", "Consultoria", "Implantação rápida"
+    ],
+    stats_results: [
+    { label: "Aumento em Exames Recebidos", value: "18%", description: "Em comparação com o ano de 2024" },
+    { label: "Estados", value: "7", description: "25% dos estados do Brasil abrangidos" },
+    { label: "Centros de Imagem", value: "96", description: "Incluindo clínicas, hospitais e centros de imagem" },
+    { label: "Pacientes", value: "1M", description: "Pacientes atendidos pelo sistema" },
+    { label: "Radiologistas", value: "262", description: "Radiologistas ativos no sistema" },
+    { label: "Laudos Entregues", value: "100K/mês", description: "Laudos podem ser produzidos em menos de 1 minuto" }
+  ],
   },
   es: {
     problem: 'Problema',
@@ -131,7 +180,49 @@ const translations = {
       { "step": "4", "title": "Entrega", "description": "Resultado disponible para médico y paciente" }
     ],
     workflow_keywords: ["solicita","radiólogo","automáticamente","nube","examen de imagen","analiza","disponible","informe"],
+    report_title : 'HigIA Report/Apollo PACS',
+    report_points : [
+      'Facilidad de uso y diseño intuitivo',
+    'Herramientas que aceleran la emisión de informes',
+    'Flujo de trabajo personalizable',
+    'Seguridad y auditoría total',
+    'Informes que impulsan la toma de decisiones'
+    ],
+    report_keywords : [
+      '',
+    ],
+    company_issues : [
+      'Sistema escalable para cualquier tamaño de clínica u hospital',
+      'Integración con RIS, PACS y registros médicos electrónicos',
+      'Consultoría especializada en implementación',
+      'Implementación rápida y sin burocracia',
+      'Soporte humanizado'
+    ],
+    company_keywords: [
+      "humanizado", "cualquier tamaño", "RIS", "PACS", "Consultoría", "Implementación rápida"
+    ],
+    care_title : 'HigIA Care',
+      care_points : [
+    'Programación rápida e interactiva',
+    'Historial médico completo y personalizable',
+    'Panel de atención configurable',
+    'Atención ágil con registro completo',
+    'Control y auditoría de datos del paciente'
+  ],
+    care_keywords : [
+      '',
+    ],
+    stats_results: [
+      { label: "Incremento en Exámenes Recibidos", value: "18%", description: "En comparación con el año 2024" },
+      { label: "Estados", value: "7", description: "25% de los estados brasileños cubiertos" },
+      { label: "Centros de Imagen", value: "96", description: "Incluyendo clínicas, hospitales y centros de imagen" },
+      { label: "Pacientes", value: "1M", description: "Pacientes atendidos por el sistema" },
+      { label: "Radiólogos", value: "262", description: "Radiólogos activos en el sistema" },
+      { label: "Informes Entregados", value: "100K/mes", description: "Informes pueden producirse en menos de 1 minuto" }
+    ]
   },
+
+  
   en: {
     problem: 'Problem',
     solution: 'Solution',
@@ -190,7 +281,47 @@ const translations = {
       { "step": "3", "title": "Report", "description": "Remotely, the radiologist analyzes and issues the report" },
       { "step": "4", "title": "Delivery", "description": "Result available for doctor and patient" }
     ],
-    workflow_keywords: ["requests","radiologist","automatically","cloud","imaging exam","analyzes","available","report"]
+    workflow_keywords: ["requests","radiologist","automatically","cloud","imaging exam","analyzes","available","report"],
+    report_title : 'HigIA Report/Apollo PACS',
+    report_points : [
+      'Ease of use and intuitive design',
+      'Tools that speed up report generation',
+      'Customizable workflow',
+      'Complete security and auditing',
+      'Reports that drive decision-making'
+    ],
+    report_keywords : [
+      '',
+    ],
+    care_title : 'HigIA Care',
+    care_points : [
+      'Fast and interactive scheduling',
+    'Complete and customizable medical record',
+    'Configurable service dashboard',
+    'Efficient patient care with full registration',
+    'Patient data control and auditing'
+    ],
+    care_keywords : [
+      '',
+    ],
+    company_issues : [
+      'Scalable system for clinics and hospitals of any size',
+      'Integration with RIS, PACS, and electronic medical records',
+      'Specialized implementation consulting',
+      'Fast and hassle-free deployment',
+      'Humanized support'
+    ],
+    company_keywords: [
+      "Humanized", "any size", "RIS", "PACS", "consulting", "Fast", "hassle-free"
+    ],
+    stats_results:[
+      { label: "Increase in Exams Received", value: "18%", description: "Compared to the year 2024" },
+      { label: "States", value: "7", description: "25% of Brazilian states covered" },
+      { label: "Imaging Centers", value: "96", description: "Including clinics, hospitals, and imaging centers" },
+      { label: "Patients", value: "1M", description: "Patients served by the system" },
+      { label: "Radiologists", value: "262", description: "Active radiologists in the system" },
+      { label: "Reports Delivered", value: "100K/month", description: "Reports can be produced in under 1 minute" }
+    ],
   },
 };
 

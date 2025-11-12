@@ -1,4 +1,4 @@
-import { FileText, TrendingDown, Users, FlagTriangleRight, AlertCircle } from 'lucide-react';
+import { AlertCircle } from 'lucide-react';
 import { useLanguage } from '../../hooks/useLanguage';
 import { useDarkMode } from '../../hooks/useDarkMode';
 
