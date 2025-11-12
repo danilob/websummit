@@ -71,7 +71,7 @@ export function DifferentialsSection({ activeSubmenu }: DifferentialsSectionProp
           {content.diferrentials_company.issues.map((issue, index) => (
             <div
               key={index}
-              className="flex items-center gap-4 p-6 bg-gray-50 dark:bg-gray-700 rounded-xl"
+              className="flex items-center gap-4 p-2 bg-gray-50 dark:bg-gray-700 rounded-xl"
             >
               <Star className="text-[#DF5D00] flex-shrink-0" size={24} />
               <p className="text-lg text-gray-700 dark:text-gray-300 text-justify">

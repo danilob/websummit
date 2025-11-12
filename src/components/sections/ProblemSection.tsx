@@ -81,7 +81,7 @@ export function ProblemSection({ activeSubmenu }: ProblemSectionProps) {
           {content.inefficiency.points.map((point, index) => (
             <div
               key={index}
-              className="flex items-start gap-4 p-6 bg-gray-50 dark:bg-gray-700 rounded-xl"
+              className="flex items-start gap-4 p-4 bg-gray-50 dark:bg-gray-700 rounded-xl"
             >
               <AlertCircle className="text-[#DF5D00] flex-shrink-0 mt-1" size={24} />
               <p className="text-lg text-gray-700 dark:text-gray-300 text-justify">
@@ -101,7 +101,7 @@ export function ProblemSection({ activeSubmenu }: ProblemSectionProps) {
           {content.costs.stats.map((stat, index) => (
             <div
               key={index}
-              className="text-center p-8 bg-gray-50 dark:bg-gray-700 rounded-xl"
+              className="text-center p-4 bg-gray-50 dark:bg-gray-700 rounded-xl"
             >
               <div className="text-4xl font-bold text-[#DF5D00] mb-2">{stat.value}</div>
               <div className="text-lg font-semibold text-gray-900 dark:text-white mb-2">
@@ -118,11 +118,11 @@ export function ProblemSection({ activeSubmenu }: ProblemSectionProps) {
   if (activeSubmenu === 'patients') {
     return (
       <div className="space-y-6">
-        <div className="grid md:grid-cols-2 gap-6">
+        <div className="grid md:grid-cols-1 gap-6">
           {content.patients.issues.map((issue, index) => (
             <div
               key={index}
-              className="flex items-center gap-4 p-6 bg-gray-50 dark:bg-gray-700 rounded-xl"
+              className="flex items-center gap-4 p-4 bg-gray-50 dark:bg-gray-700 rounded-xl"
             >
               {/* <FlagTriangleRight className="text-[#DF5D00] flex-shrink-0" size={28} /> */}
               <p className="text-lg text-gray-700 dark:text-gray-300 text-justify">

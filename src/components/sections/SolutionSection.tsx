@@ -83,11 +83,11 @@ export function SolutionSection({ activeSubmenu }: SolutionSectionProps) {
   if (activeSubmenu === 'platform') {
     return (
       <div className="space-y-6">
-        <div className="grid md:grid-cols-2 gap-6">
+        <div className="grid md:grid-cols-2 gap-2">
           {content.platform.features.map((feature, index) => (
             <div
               key={index}
-              className="flex items-center gap-4 p-6 bg-gradient-to-br from-orange-50 to-orange-100 dark:from-gray-700 dark:to-gray-600 rounded-xl border-2 border-[#DF5D00]"
+              className="flex items-center gap-2 p-2 bg-gradient-to-br from-orange-50 to-orange-100 dark:from-gray-700 dark:to-gray-600 rounded-xl border-2 border-[#DF5D00]"
             >
               <div className="w-8 h-8 rounded-full bg-[#DF5D00] text-white flex items-center justify-center font-bold flex-shrink-0">
                 {index + 1}
@@ -110,9 +110,9 @@ export function SolutionSection({ activeSubmenu }: SolutionSectionProps) {
   <div className="absolute left-[30px] top-0 bottom-1 w-1 bg-[#DF5D00] z-0 hidden md:block"></div>
 
   {/* Passos */}
-  <div className="space-y-8 relative z-10">
+  <div className="space-y-4 relative z-10">
     {content.workflow.steps.map((item, index) => (
-      <div key={index} className="flex items-start gap-6 relative">
+      <div key={index} className="flex items-start gap-2 relative">
         {/* Círculo com número */}
         <div className="w-16 h-16 rounded-full bg-[#DF5D00] text-white flex items-center justify-center text-xl font-bold shadow-lg flex-shrink-0 z-20 relative">
           {item.step}
@@ -120,7 +120,7 @@ export function SolutionSection({ activeSubmenu }: SolutionSectionProps) {
 
         {/* Conteúdo */}
         <div className="flex-1 pt-1">
-          <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-1">
+          <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-1">
             {item.title}
           </h3>
           <p className="text-lg text-gray-700 dark:text-gray-300 text-justify">

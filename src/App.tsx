@@ -52,7 +52,7 @@ function AppContent() {
         { id: 'overview', icon: FileText, label: 'Visão Geral' },
         { id: 'inefficiency', icon: AlertCircle, label: 'Ineficiências' },
         { id: 'costs', icon: TrendingDown, label: 'Custos' },
-        { id: 'patients', icon: Siren, label: 'Pacientes' },
+        // { id: 'patients', icon: Siren, label: 'Pacientes' },
       ],
     },
     solution: {
@@ -176,7 +176,7 @@ function AppContent() {
 
   return (
     <div className="h-screen bg-white dark:bg-gray-900 transition-colors duration-300 overflow-hidden relative">
-      <div className="fixed bottom-0 left-0 w-[500px] pointer-events-none z-0 animate-slide-up">
+      <div className="fixed bottom-0 left-0 w-[400px] pointer-events-none z-0 animate-slide-up">
         <img
           src="/title-removebg-preview.png"
           alt=""

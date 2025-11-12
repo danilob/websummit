@@ -281,7 +281,7 @@ const translations = {
       { "step": "3", "title": "Report", "description": "Remotely, the radiologist analyzes and issues the report" },
       { "step": "4", "title": "Delivery", "description": "Result available for doctor and patient" }
     ],
-    workflow_keywords: ["requests","radiologist","automatically","cloud","imaging exam","analyzes","available","report"],
+    workflow_keywords: ["requests","radiologist","automatically","cloud","imaging exam","analyzes","available","reporting"],
     report_title : 'HigIA Report/Apollo PACS',
     report_points : [
       'Ease of use and intuitive design',
